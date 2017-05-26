@@ -78,6 +78,7 @@ s.exclude_files = "Classes/Exclude"
 
 ### 验证podspec文件有效性
 1. 执行 `pod lib lint` 输出如下结果即为通过：
+
 ![](media/14944821748805/14944850196252.jpg)
 
 2. 执行 `pod spec lint` 输出如下结果即为通过：
