@@ -25,6 +25,7 @@ pod repo add MBKitSpace https://git.oschina.net/YuriZhang/mbkitspace.git
 ###创建私有的项目工程文件
 第二步，如果有现有的项目，并且还在git下进行管理的可以忽略这一步。如果没有，那就新建一个或者拖入一个希望进行管理的组件。
 在功能稳定后在当前分支打tag，并push到远程仓库
+
 ![](media/14944821748805/14944843141493.jpg)  
 
 ###创建私有Pod的podspec
@@ -80,11 +81,15 @@ s.exclude_files = "Classes/Exclude"
 ![](media/14944821748805/14944850196252.jpg)
 
 2. 执行 `pod spec lint` 输出如下结果即为通过：
+
 ![](media/14944821748805/14944856258505.jpg)
+
 如果以上两步全部通过，就证明podspec文件配置成功。
 ###提交podspec至私有仓库
 在podspec所出文件目录执行 `pod repo push MBKitSpace MBKit.podspec` 执行完成之后这个组件库就添加到我们的私有Spec Repo中了，可以进入到~/.cocoapods/repos/MBKitSpace目录下查看，就可以看到提交的对应版本信息了。
+
 ![](media/14944821748805/14944863010878.jpg)
+
 至此，我们的这个组件库就已经制作添加完成了。  
 
 ###使用私有仓库  
